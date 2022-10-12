@@ -37,7 +37,5 @@ public class FloatCount {
 //        double d = 2.6;
 //        int n = (int) (d + 0.5);
 //        System.out.println(n);
-
-
     }
 }
