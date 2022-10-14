@@ -1,7 +1,7 @@
 import java.util.Scanner;
 //通过import语句导入java.util.Scanner，import是导入某个类的语句，必须放到Java源代码的开头
 
-public class ProcessControl {
+public class InputAndOutput {
     public static void main(String[] args) {
 //        格式化输出，便于人类阅读
 //        double d = 3.1415926;
