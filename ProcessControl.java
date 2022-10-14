@@ -32,5 +32,6 @@ public class ProcessControl {
         sc.close();
         double percent = ((double) score - (double) prev) / prev * 100;
         System.out.printf("成绩提高了%.2f%%", percent);
+//        注意，由于%表示占位符，因此，连续两个%%表示一个%字符本身。
     }
 }
