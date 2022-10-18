@@ -67,31 +67,36 @@ public class ForLoop {
 
 //        练习1
 //        给定一个数组，请用for循环倒序输出每一个元素：
-        int[] ns = { 1, 4, 9, 16, 25 };
+        int[] ns = {1, 4, 9, 16, 25};
         for (int i = ns.length - 1; i >= 0; i--) {
             System.out.println(ns[i]);
         }
 
 //        练习2
 //        利用for each循环对数组每个元素求和：
-        int[] ns1 = { 1, 4, 9, 16, 25 };
+        int[] ns1 = {1, 4, 9, 16, 25};
         int sum = 0;
         for (int i = 0; i < ns1.length; i++) {
             // TODO
             sum += ns1[i];
         }
+        System.out.print("Sum of the Array ns1: ");
         System.out.println(sum); // 55
 
 //        练习3
 //        圆周率π可以使用公式计算：
 //        请利用for循环计算π：
         double pi = 0;
-        for (int i=0; ; i++) {
-            // TODO
+        int flag = 1;//想要知道for循环执行了几次，最简单直接的方法是引入一个新变量
+        for (int i = 1; i < 999999; i += 2) {
+            if (flag % 2 == 1) {
+                pi += 1.0 / i;
+            }
+            else {
+                pi -= 1.0 / i;
+            }
+            flag++;
         }
-        System.out.println(pi);
-
-
-
+        System.out.println(pi * 4);
     }
 }
