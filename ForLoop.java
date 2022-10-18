@@ -98,5 +98,7 @@ public class ForLoop {
             flag++;
         }
         System.out.println(pi * 4);
+//        一个想法：可以在pi的小数点后的数字位数超过15位之后终止for循环
+//        pi的结果最多可以显示到小数点后15位：3.141594653593692
     }
 }
