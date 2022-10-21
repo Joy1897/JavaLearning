@@ -1,4 +1,4 @@
-public class OOBMethod {
+public class OOBBasic {
     public static void main(String[] args) {
         City bj = new City();
         bj.name = "Beijing";
